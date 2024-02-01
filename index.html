@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h1>infinity </h1>
+            <div class="control-bar">
+                <box-icon class="menu account" name='user' ></box-icon>
+                <box-icon class="menu" name='menu-alt-right'></box-icon>
+            
+            </div>
+        </div>
+        <div class="logo-container">
+            <div class="logo">
+                <div class="mini-logo"></div>
+                <div class="semi-mini-logo"></div>
+            </div>
+            <div class="semi-logo"></div>
+        </div>
+        <div class="text-container">
+            <h1> Biling <h2> stratos </h2></h1>
+            <h3>we should actually put smth here</h3>
+
+
+               <button class="Discover"><span>Discover</span></button>
+
+
+
+
+        </div>
+
+
+    </div>
+    <div class="curtain c1" style="--i:1"></div>
+    <div class="curtain c2" style="--i:1"></div>
+    <div class="curtain c3" style="--i:1"></div>
+   
+     <div class="discover-page">
+     <div class="return">
+        
+        
+        
+        <box-icon class="ret left"   name='chevron-left'></box-icon>
+        <box-icon class="ret right" name='chevron-right'></box-icon>
+     </div>
+
+      <div class="pane-container">
+        <div class="pane" style="--j:1">
+            
+            <h4>Phase 01</h4>
+            <div class="txt-container">
+                <img src="./images/output-onlinegiftools.gif" alt="" >
+                <h1>performance</h1>
+                <h3>performance tracking</h3>
+                <span>we should add smth here</span>
+                <ul>
+                    <li>firts thing </li>
+                    <li>second thing</li>
+                    <li>third thing</li>
+                </ul>
+            </div>
+        
+        
+        </div>
+
+        <div class="pane" style="--j:2">
+            
+            <h4>Phase 02</h4>
+            <div class="txt-container">
+                <img src="./images/output-onlinegiftools (1).gif" alt="">
+                <h1>performance</h1>
+                <h3>performance tracking</h3>
+                <span>we should add smth here</span>
+                <ul>
+                    <li>firts thing </li>
+                    <li>second thing</li>
+                    <li>third thing</li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <div class="pane" style="--j:3">
+            <div class="txt-container">
+                <img src="./images/img3.gif" alt="">
+                <h1>performance</h1>
+                <h3>performance tracking</h3>
+                <span>we should add smth here</span>
+                <ul>
+                    <li>firts thing </li>
+                    <li>second thing</li>
+                    <li>third thing</li>
+                </ul>
+            </div>
+            
+            <h4>Phase 03</h4></div>
+
+        <div class="pane" style="--j:4">
+            
+            <div class="txt-container">
+                <img src="./images/img4.gif" alt="">
+                <h1>performance</h1>
+                <h3>performance tracking</h3>
+                <span>we should add smth here</span>
+                <ul>
+                    <li>firts thing </li>
+                    <li>second thing</li>
+                    <li>third thing</li>
+                </ul>
+            </div>
+            
+            <h4>Phase 04</h4></div>
+
+        <div class="pane" style="--j:5">
+            <div class="txt-container">
+                <img src="./images/img6.gif" alt="">
+                <h1>performance</h1>
+                <h3>performance tracking</h3>
+                <span>we should add smth here</span>
+                <ul>
+                    <li>firts thing </li>
+                    <li>second thing</li>
+                    <li>third thing</li>
+                </ul>
+            </div>
+            <h4>Phase 05</h4></div>
+      </div>
+
+     </div>
+
+
+      <script>
+         
+   const panes = document.querySelectorAll('.pane-container .pane');
+   for (let j = 0; j < panes.length; j++) {
+    const btn = document.createElement('div');
+    btn.classList.add('btn');
+
+    btn.innerHTML = `<box-icon class='menu' name="right-arrow-alt"></box-icon>`;
+    panes[j].appendChild(btn);
+
+    panes[j].addEventListener('mouseover', () => {
+      panes.forEach((pane) => {
+        pane.style.background = 'rgba(0,0,0,0.552)';
+      });
+         
+      panes[j].style.background = 'transparent';
+    });
+
+    panes[j].addEventListener('mouseout', () => {
+      panes.forEach((pane) => {
+        pane.style.background = '';
+      });
+      panes[j].style.background = '';
+    });  }     
+
+  const btn = document.querySelector('.discover');
+  const curtains = document.querySelectorAll('.curtains');
+  const discover_page = document.querySelector('.discover-page');
+  btn.addEventListener('click', discoverPage);
+                           
+  function discoverPage() {
+    curtains.forEach((curtain) => {
+      curtain.classList.toggle('active');
+    });
+
+    discover_page.classList.toggle('active');
+     }
+</script>
+
+      
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>  
+
+
+</body>
+</html>
+
+
+
